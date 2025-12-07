@@ -10,7 +10,7 @@ const lightboxInfo = document.getElementById("lightboxInfo");
 const closeBtn = document.getElementById("closeBtn");
 const loadingSpinner = document.getElementById("loadingSpinner");
 
-const prothesShreyasi = "aHR0cHM6Ly9wcm90aGVzYmFyYWkuZ2l0aHViLmlvL3Byb3RoZXNiYXJhaS9hc3BfaW1hZ2VfZ2FsbGVyeS8=";
+const prothesShreyasi = "aHR0cHM6Ly9zcGhzaHV2by5naXRodWIuaW8vbXlfcGhvdG9fZ2FsbGVyeS8=";
 const angkan = atob(prothesShreyasi);
 
 let currentPage = 1;
@@ -21,7 +21,7 @@ let images = [];
 async function loadImages() {
   const res = await fetch("images.json");
   images = await res.json();
-  images = images.map(img => ({...img,url: angkan + img.url }));
+  images = images.map(img => ({...img,url: angkan + img.url.replace(/^\//, "") }));
   showPage();
 }
 
