@@ -4233,6 +4233,31 @@ section,
   }
 }
 
+/* Hero Image Responsive */
+.hero-image{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Mobile View */
+@media (max-width: 768px){
+
+  #hero{
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/

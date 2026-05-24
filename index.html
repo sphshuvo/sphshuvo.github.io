@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -14,10 +15,13 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="assets/aos/aos.css" rel="stylesheet">
   <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -32,12 +36,12 @@
 <body class="index-page">
 
   <!-- Floating Whatsapp -->
-    <div class="floating_whatsapp" id="mydiv">
-        <a href="https://wa.me/01615195498" target="_blank">
-            <img src="../assets/img/services/whatsapp.png" alt="Whatsapp" class="pulsing-2" id="mydivheader">
-        </a>
-    </div>
-  <!-- Floating Whatsapp --> 
+  <div class="floating_whatsapp" id="mydiv">
+    <a href="https://wa.me/01615195498" target="_blank">
+      <img src="../assets/img/services/whatsapp.png" alt="Whatsapp" class="pulsing-2" id="mydivheader">
+    </a>
+  </div>
+  <!-- Floating Whatsapp -->
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -51,13 +55,14 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="pages/about_page.html">About</a></li>
-          <li><a href="pages/service_page.html">Services</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/service.html">Services</a></li>
           <li><a href="pages/portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>My Assets</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -71,7 +76,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="pages/contact_page.html">Contact</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -83,16 +88,27 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/profile/sph.webp" alt="" data-aos="fade-in">
+      <!-- <img src="assets/img/profile/sph.webp" alt="" data-aos="fade-in"> -->
+      <picture>
+        <!-- Mobile Image -->
+        <source media="(max-width: 768px)" srcset="assets/img/profile/sph-mobile.webp">
+
+        <!-- Desktop Image -->
+        <img src="assets/img/profile/sph.webp" alt="SPH SHUVO" data-aos="fade-in" class="hero-image">
+      </picture>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
             <h2>Hi, I'm Sph Shuvo</h2>
-            <p>I'm a <span class="typed" data-typed-items="A Flim-Maker, Photographer, Content creator, Editor"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <p>I'm a <span class="typed"
+                data-typed-items="A Flim-Maker, Photographer, Content creator, Editor"></span><span class="typed-cursor"
+                aria-hidden="true"></span></p>
             <div class="social-links">
               <a href="https://x.com/sphshuvo?s=21" target="_blank"><i class="bi bi-twitter-x"></i></a>
-              <a href="https://www.facebook.com/share/1DpbBzso2Z/?mibextid=wwXIfr" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/sph_shuvo?igsh=NmNodXkxcnBpdTJn&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.facebook.com/share/1DpbBzso2Z/?mibextid=wwXIfr" target="_blank"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/sph_shuvo?igsh=NmNodXkxcnBpdTJn&utm_source=qr" target="_blank"><i
+                  class="bi bi-instagram"></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
@@ -108,7 +124,9 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About Me</h2>
-        <p>I'm Professional Photographer & Cinematographer capturing the art of real moments with creativity and precision. Specializing in portraits, commercial projects, and cinematic storytelling that resonates with audiences and leaves a lasting impression.</p>
+        <p>I'm Professional Photographer & Cinematographer capturing the art of real moments with creativity and
+          precision. Specializing in portraits, commercial projects, and cinematic storytelling that resonates with
+          audiences and leaves a lasting impression.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -166,18 +184,22 @@
                 </div>
               </div>
 
-  
+
 
               <div class="profile-actions">
-                <a href="#" class="btn-primary"><i class="bi bi-download"></i> Download CV</a>
+                <a href="javascript:void(0)" class="btn-primary" onclick="downloadCV()">
+                  <i class="bi bi-download"></i> Download CV
+                </a>
                 <a href="mailto:mradi4870@.com" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
               </div>
 
               <div class="social-connect">
                 <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="https://www.facebook.com/share/1DpbBzso2Z/?mibextid=wwXIfr" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/share/1DpbBzso2Z/?mibextid=wwXIfr" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
                 <a href="https://x.com/sphshuvo?s=21" target="_blank"><i class="bi bi-twitter"></i></a>
-                <a href="https://www.instagram.com/sph_shuvo?igsh=NmNodXkxcnBpdTJn&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/sph_shuvo?igsh=NmNodXkxcnBpdTJn&utm_source=qr" target="_blank"><i
+                    class="bi bi-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -187,8 +209,11 @@
               <div class="bio-section">
                 <div class="section-tag">About Me</div>
                 <h2>Crafting Visual Stories Through Lens & Light</h2>
-                <p>With over 7 years of my experience, the focus is translating ideas into compelling visual narratives. Each project—whether portrait, cinematic, or branded content—is approached with artistic vision and technical excellence to create memorable imagery.</p>
-                <p>My Passionate - about storytelling, attention to detail, and cinematic aesthetics, every frame to evoke emotion, and connect with the audience on a deeper level.</p>
+                <p>With over 7 years of my experience, the focus is translating ideas into compelling visual narratives.
+                  Each project—whether portrait, cinematic, or branded content—is approached with artistic vision and
+                  technical excellence to create memorable imagery.</p>
+                <p>My Passionate - about storytelling, attention to detail, and cinematic aesthetics, every frame to
+                  evoke emotion, and connect with the audience on a deeper level.</p>
               </div>
 
               <div class="details-grid">
@@ -225,7 +250,7 @@
                     </div>
                   </div>
                 </a>
-                 <a href="tel:+8801615195498" style="text-decoration:none; color:inherit;">
+                <a href="tel:+8801615195498" style="text-decoration:none; color:inherit;">
                   <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
                     <i class="bi bi-phone"></i>
                     <div class="detail-content">
@@ -251,20 +276,22 @@
                   <div class="skill-item">
                     <div class="skill-info">
                       <span class="skill-name">Photography (Wedding, Portrait, Event) etc</span>
-                      <span class="skill-percent">98%</span>
+                      <span class="skill-percent">99%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
 
                   <div class="skill-item">
                     <div class="skill-info">
                       <span class="skill-name">Cinematography (CC, TBC, OVC, FM, ED) etc</span>
-                      <span class="skill-percent">97%</span>
+                      <span class="skill-percent">99%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
 
@@ -274,7 +301,8 @@
                       <span class="skill-percent">99%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
 
@@ -284,7 +312,8 @@
                       <span class="skill-percent">99%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
 
@@ -294,7 +323,8 @@
                       <span class="skill-percent">99%</span>
                     </div>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0"
+                        aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -315,7 +345,13 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Services</span>
         <h2>Services</h2>
-        <p>I am a professional photographer dedicated to capturing life’s most memorable moments with creativity, precision, and passion. With experience in photography and cinematography, I offer a wide range of services including weddings, corporate events, birthdays, fashion, and product photography. Every project is approached with a unique artistic vision to ensure stunning visuals that tell your story. My goal is to preserve memories in a way that is both visually beautiful and emotionally meaningful. Each photograph and video is crafted meticulously to reflect the essence of the moment. Trust me to transform your special moments into timeless visual stories.</p>
+        <p>I am a professional photographer dedicated to capturing life’s most memorable moments with creativity,
+          precision, and passion. With experience in photography and cinematography, I offer a wide range of services
+          including weddings, corporate events, birthdays, fashion, and product photography. Every project is approached
+          with a unique artistic vision to ensure stunning visuals that tell your story. My goal is to preserve memories
+          in a way that is both visually beautiful and emotionally meaningful. Each photograph and video is crafted
+          meticulously to reflect the essence of the moment. Trust me to transform your special moments into timeless
+          visual stories.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -328,7 +364,8 @@
                 <i class="bi bi-camera"></i>
               </div>
               <h4>Photography</h4>
-              <p>Professional photography services capturing moments with creativity and precision.From portraits to events, we frame every shot beautifully.</p>
+              <p>Professional photography services capturing moments with creativity and precision.From portraits to
+                events, we frame every shot beautifully.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -343,7 +380,8 @@
                 <i class="bi bi-camera-reels"></i>
               </div>
               <h4>Cinematography</h4>
-              <p>High-quality video production to tell your story with cinematic flair.We create visually stunning films for events, promotions, or personal projects.</p>
+              <p>High-quality video production to tell your story with cinematic flair.We create visually stunning films
+                for events, promotions, or personal projects.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -358,7 +396,8 @@
                 <i class="bi bi-people"></i>
               </div>
               <h4>Corporate Program Photography</h4>
-              <p>Coverage of corporate events, conferences, and seminars with a professional touch.We capture the essence of your corporate gatherings and networking moments.</p>
+              <p>Coverage of corporate events, conferences, and seminars with a professional touch.We capture the
+                essence of your corporate gatherings and networking moments.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -373,7 +412,8 @@
                 <i class="bi bi-heart-fill"></i>
               </div>
               <h4>Wedding Photography</h4>
-              <p>Preserving the magical moments of your special day in timeless photographs.From candid to posed shots, we ensure every memory is beautifully documented.</p>
+              <p>Preserving the magical moments of your special day in timeless photographs.From candid to posed shots,
+                we ensure every memory is beautifully documented.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -388,7 +428,8 @@
                 <i class="bi bi-cake"></i>
               </div>
               <h4>Birthday & Celebration Photography</h4>
-              <p>Capturing smiles, laughter, and joyous moments of birthdays and parties.We focus on creating vibrant and memorable images for your celebrations.</p>
+              <p>Capturing smiles, laughter, and joyous moments of birthdays and parties.We focus on creating vibrant
+                and memorable images for your celebrations.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -402,7 +443,8 @@
                 <i class="bi bi-calendar-event"></i>
               </div>
               <h4>Event & Function Photography</h4>
-              <p>Professional coverage for concerts, cultural events, or private functions.We deliver high-quality visuals that highlight every key moment.</p>
+              <p>Professional coverage for concerts, cultural events, or private functions.We deliver high-quality
+                visuals that highlight every key moment.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -416,7 +458,8 @@
                 <i class="bi bi-box-seam"></i>
               </div>
               <h4>Product & Commercial Photography</h4>
-              <p>Showcase your products or services with sharp, high-quality images.Perfect for e-commerce, marketing campaigns, and brand promotion.</p>
+              <p>Showcase your products or services with sharp, high-quality images.Perfect for e-commerce, marketing
+                campaigns, and brand promotion.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -431,7 +474,8 @@
                 <i class="bi bi-journal-text"></i>
               </div>
               <h4>Event Documentary</h4>
-              <p>Capture every moment of your event with a storytelling approach.We document candidly and professionally to preserve memories with impact.</p>
+              <p>Capture every moment of your event with a storytelling approach.We document candidly and professionally
+                to preserve memories with impact.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -446,7 +490,8 @@
                 <i class="bi bi-shield-check"></i>
               </div>
               <h4>Travel & Landscape Photography</h4>
-              <p>Showcasing breathtaking locations and scenic beauty through the lens.We capture nature, architecture, and culture with creative perspectives.</p>
+              <p>Showcasing breathtaking locations and scenic beauty through the lens.We capture nature, architecture,
+                and culture with creative perspectives.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -463,7 +508,8 @@
                 <i class="bi bi-stars"></i>
               </div>
               <h4>Fashion & Portfolio Photography</h4>
-              <p>Professional fashion shoots for models, influencers, or personal branding.High-quality images that highlight style, elegance, and personality.</p>
+              <p>Professional fashion shoots for models, influencers, or personal branding.High-quality images that
+                highlight style, elegance, and personality.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -479,7 +525,8 @@
                 <i class="bi bi-gem"></i>
               </div>
               <h4>Engagement & Pre-Wedding Shoots</h4>
-              <p>Capture the love and excitement before the big day with stunning visuals.We create romantic and memorable images that tell your unique story.</p>
+              <p>Capture the love and excitement before the big day with stunning visuals.We create romantic and
+                memorable images that tell your unique story.</p>
               <a href="service-details.html" class="read-more">
                 <span>Explore</span>
                 <i class="bi bi-arrow-right"></i>
@@ -517,7 +564,10 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Portfolio</span>
         <h2>Portfolio</h2>
-        <p>A curated collection of professional photography and cinematic projects, capturing moments that tell compelling stories.From creative portraits to branded and commercial visuals, every image is crafted with precision, emotion, and artistic vision.Explore the portfolio to experience a world where every frame reflects professionalism and creativity.</p>
+        <p>A curated collection of professional photography and cinematic projects, capturing moments that tell
+          compelling stories.From creative portraits to branded and commercial visuals, every image is crafted with
+          precision, emotion, and artistic vision.Explore the portfolio to experience a world where every frame reflects
+          professionalism and creativity.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -535,7 +585,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Creative Project" class="img-fluid"
+                    loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Creative Design</span>
@@ -564,7 +615,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Digital Project" class="img-fluid"
+                    loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Digital Experience</span>
@@ -593,7 +645,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Strategy Project" class="img-fluid"
+                    loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Brand Strategy</span>
@@ -622,7 +675,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Development Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Development Project" class="img-fluid"
+                    loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Full Stack</span>
@@ -651,7 +705,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-creative">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-5.webp" alt="Creative Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/portfolio-5.webp" alt="Creative Project" class="img-fluid"
+                    loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Art Direction</span>
@@ -680,7 +735,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-digital">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Digital Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Digital Project" class="img-fluid"
+                    loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Digital Product</span>
@@ -709,16 +765,18 @@
         </div>
 
 
-       
+
 
         <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
           <div class="row align-items-center">
             <div class="col-lg-8">
               <h3>Enjoy What You See?</h3>
-              <p>Explore the full gallery of professional photography and cinematic projects, showcasing portraits, commercial work, and creative visuals crafted with passion and precision.</p>
+              <p>Explore the full gallery of professional photography and cinematic projects, showcasing portraits,
+                commercial work, and creative visuals crafted with passion and precision.</p>
             </div>
             <div class="col-lg-4 text-lg-end">
-              <a href="..//photo_gallery/photo_gallery.html" class="btn btn-accent" target="_blank">Show My All Gallery Photos</a>
+              <a href="./sph_gallery/sph_gallery.html" class="btn btn-accent" target="_blank">Show My All Gallery
+                Photos</a>
             </div>
           </div>
         </div>
@@ -735,7 +793,8 @@
       <div class="container section-title" data-aos="fade-up">
         <span class="subtitle">Contact</span>
         <h2>Contact</h2>
-        <p>For business queries, bookings, or collaboration requests.Specialized in professional photography and cinematic storytelling.Reach out to discuss projects, events, or creative opportunities.</p>
+        <p>For business queries, bookings, or collaboration requests.Specialized in professional photography and
+          cinematic storytelling.Reach out to discuss projects, events, or creative opportunities.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -755,16 +814,16 @@
 
             <a href="tel:+8801615195498" style="text-decoration:none; color:inherit;">
               <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-telephone"></i>
+                <div class="icon-wrapper">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>+8801615195498</p>
+                </div>
               </div>
-              <div>
-                <h3>Call Me</h3>
-                <p>+8801615195498</p>
-              </div>
-            </div>
             </a>
-            
+
 
             <a href="mailto:mradi4870@.com" style="text-decoration:none; color:inherit;">
               <div class="info-item">
@@ -777,7 +836,7 @@
                 </div>
               </div>
             </a>
-            
+
 
           </div>
 
@@ -798,7 +857,8 @@
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" id="message" rows="6" placeholder="Message"
+                    required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -829,12 +889,15 @@
           <a href="index.html" class="img-fluid mx-auto d-block align-items-center mb-2 ">
             <img src="assets/img/logo.png" alt="SPH SHUVO" class="text-light" width="120px">
           </a>
-          <p>“I capture the moments you live and turn them into memories that last beyond time. Every frame is crafted with emotion, creativity, and the story only you can tell.”</p>
-        
+          <p>“I capture the moments you live and turn them into memories that last beyond time. Every frame is crafted
+            with emotion, creativity, and the story only you can tell.”</p>
+
           <div class="social-links d-flex mt-4">
             <a href="https://x.com/sphshuvo?s=21" target="_blank"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/share/1DpbBzso2Z/?mibextid=wwXIfr" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/sph_shuvo?igsh=NmNodXkxcnBpdTJn&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1DpbBzso2Z/?mibextid=wwXIfr" target="_blank"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sph_shuvo?igsh=NmNodXkxcnBpdTJn&utm_source=qr" target="_blank"><i
+                class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
@@ -871,7 +934,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright 2025 | </span> <strong class="px-1 sitename">Sph</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright 2025 | </span> <strong class="px-1 sitename">Sph</strong> <span>All Rights Reserved</span>
+      </p>
       <div class="credits">Designed by <a href="https://prothesbarai.github.io/" target="_blank"> Engr Prothes</a></div>
     </div>
 
@@ -879,14 +943,17 @@
   <!-- Footer -->
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- JS Files -->
-   <script src="assets/aos/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="assets/aos/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js"></script>
@@ -896,6 +963,18 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
   <script src="assets/js/validate.js"></script>
   <script src="js/main.js"></script>
+  <!-- For Downlaod Button -->
+  <script>
+    function downloadCV() {
+      const link = document.createElement('a');
+      link.href = 'https://sphshuvo.github.io/sph_collection/Shuvo%20CV.pdf';
+      link.download = 'SPH_SHUVO_CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
 
 </body>
+
 </html>

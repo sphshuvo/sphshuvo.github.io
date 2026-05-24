@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sph Shuvo | The guy with a camera</title>
+  <!-- Favicons -->
+  <link href="..//assets/img/favicon.webp" rel="icon">
+  <link href="..//assets/img/favicon.webp" rel="apple-touch-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+  <!-- Vendor CSS Files -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="../assets/aos/aos.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+  <!-- Main CSS File -->
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/whatsapp.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+  <!-- Gallery Header -->
+   <h1 class="fw-bold mb-3" style="color: #ff4d4f;"><i class="bi bi-camera-fill"></i> SPH Gallery <i class="bi bi-images"></i></h1>
+
+
+  <!-- Per Page Image Show -->
+  <div class="d-inline-flex align-items-center bg-light p-3 rounded-4 shadow-sm mb-5">
+    <label class="form-label mb-0 me-2 fw-semibold" style="color: #ff4d4f;">প্রতি পেজে ছবি সংখ্যা:</label>
+    <select id="perPageSelect" class="form-select form-select-sm w-auto" style="color: #ff4d4f;">
+      <option value="6">6</option>
+      <option value="9">9</option>
+      <option value="12" selected>12</option>
+      <option value="18">18</option>
+      <option value="36">36</option>
+      <option value="72">72</option>
+      <option value="99">99</option>
+    </select>
+  </div>
+
+
+  <!-- Centered Loading Spinner -->
+  <div id="loadingSpinner" class="justify-content-center align-items-center">
+        <div class="spinner-border text-primary" role="status" style="width: 4rem; height: 4rem;">
+          <span class="visually-hidden" style="color: #ff4d4f;">Loading...</span>
+        </div>
+        <p class="mt-3 fw-semibold" style="color: #ff4d4f;">Loading images...</p>
+  </div> 
+  
+
+
+  <div class="p-3">
+    <div id="gallery" class="masonry"></div>
+  </div>
+
+
+  <!-- Pagination -->
+  <div class="d-flex justify-content-center align-items-center my-4">
+    <button id="prevBtn" class="btn btn-outline-primary me-2"> <i class="fa-solid fa-arrow-left"></i> Previous</button>
+    <span id="pageInfo" class="mx-3 fw-bold" style="color: #ff4d4f;"></span>
+    <button id="nextBtn" class="btn btn-outline-primary ms-2" > Next <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+
+
+  <!-- Fullscreen Image Viewer -->
+  <div id="lightbox" class="lightbox">
+    <span id="closeBtn">&times;</span>
+    <img id="lightboxImg" src="" alt="">
+    <div id="lightboxInfo"></div>
+  </div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about text-center text-lg-start text-md-start">
+          <a href="../index.html" class="img-fluid mx-auto d-block align-items-center mb-2 ">
+            <img src="../assets/img/logo.png" alt="SPH SHUVO" class="text-light" width="120px">
+          </a>
+          <p>“I capture the moments you live and turn them into memories that last beyond time. Every frame is crafted with emotion, creativity, and the story only you can tell.”</p>
+        
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/sphshuvo?s=21" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/share/1DpbBzso2Z/?mibextid=wwXIfr" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sph_shuvo?igsh=NmNodXkxcnBpdTJn&utm_source=qr" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Working Hours</h4>
+          <ul>
+            <li><a href="#">Mon–Thu: 10:00 AM – 6:00 PM</a></li>
+            <li><a href="#">Fri-Sat: 12:00 AM – 5:00 PM</a></li>
+            <li><a href="#">Sunday: Closed</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>My Services</h4>
+          <ul>
+            <li><a href="#">Wedding</a></li>
+            <li><a href="#">Portraits</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Editing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Me</h4>
+          <p>House 14, Road 10</p>
+          <p>South Banasree,Dhaka 1214</p>
+          <p>Bangladesh</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+8801615195498</span></p>
+          <p><strong>Email:</strong> <span>mradi4870@.com</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright 2025 | </span> <strong class="px-1 sitename">Sph</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">Designed by <a href="https://prothesbarai.github.io/" target="_blank"> Engr Prothes</a></div>
+    </div>
+
+  </footer>
+  <!-- Footer -->
+
+
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- JS Files -->
+   <script src="../assets/aos/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.1/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+  <script src="../assets/js/validate.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
